@@ -1,0 +1,9 @@
+build/
+node_modules/
+
+keys.json
+
+#temp
+docker-compose.yml
+NOTES.md 
+test/
