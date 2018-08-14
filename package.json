@@ -5,7 +5,11 @@
   "scripts": {
     "test": "truffle test",
     "compile": "truffle compile",
-    "deploy": "truffle deploy"
+    "deploy": "truffle deploy",
+    "dstopall": " docker kill $(docker ps -q)",
+    "dbuild": "docker build -t ganache_cli_container .",
+    "drun": "docker run -dit -p 8545:8545 ganache_cli_container",
+    "getkeys": "docker cp $(docker ps -q):/keys.json ."
   },
   "author": "",
   "license": "ISC",
