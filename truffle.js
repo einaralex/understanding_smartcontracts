@@ -1,3 +1,6 @@
+/* 
+    https://truffleframework.com/docs/truffle/reference/configuration 
+*/
 module.exports = {
   networks: {
     development: {
