@@ -4,9 +4,9 @@ const web3 = new Web3(new Web3.providers.HttpProvider("http://0.0.0.0:8545"));
 
 const metadata = require('../build/contracts/Counter');
 const abi = metadata.abi;
-console.log(metadata)
+console.log(metadata.address)
 //console.log(web3.contract)
-const contractAddress = "0xfd8cd57eb2dfd983d0a5a62b24295642267573f0";
+//console.log(contractAddress)
 
 async function getMainAccount() {
   let accounts = await web3.eth.getAccounts();

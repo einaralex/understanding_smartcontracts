@@ -6,6 +6,8 @@
     "test": "truffle test",
     "compile": "truffle compile",
     "deploy": "truffle deploy",
+    "migrate": "truffle migrate",
+    "migrate:reset": "truffle migrate --reset",
     "dstopall": " docker kill $(docker ps -q)",
     "dbuild": "docker build -t ganache_cli_container .",
     "drun": "docker run -dit -p 8545:8545 ganache_cli_container",
@@ -14,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "openzeppelin-solidity": "^1.12.0",
     "truffle": "^4.1.13",
     "web3": "^1.0.0-beta.34"
   }
